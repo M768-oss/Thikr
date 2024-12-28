@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أذكار الصباح والمساء</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('path_to_background_image.jpg'); /* ضع رابط الخلفية هنا */
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: rgba(76, 175, 80, 0.8);
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            font-size: 1.8rem;
+            border-bottom: 3px solid #4caf50;
+        }
+        main {
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            justify-items: center;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            width: 100%;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 2px solid #4caf50;
+        }
+        .card h3 {
+            color: #4caf50;
+            font-size: 1.3rem;
+            margin: 1rem 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h3>صدقة عن والدتي مريم الجهني رحمها الله وعن جميع موتى المسلمين</h3>
+    </header>
+    <main>
+        <div class="card" onclick="location.href='#'">
+            <img src="QWN.jfif" alt="القرآن_نت">
+            <h3>القرآن الكريم</h3>
+        </div>
+        <div class="card" onclick="location.href='#quran'">
+            <img src="M.webp" alt="أذكار_الصباح">
+            <h3>أذكار الصباح</h3>
+        </div>
+        <div class="card" onclick="location.href='#sleep'">
+            <img src="N.webp" alt="أذكار_المساء">
+            <h3>أذكار المساء</h3>
+        </div>
+        <div class="card" onclick="location.href='#wake'">
+            <img src="T.webp" alt="دعاء_السفر">
+            <h3>دعاء السفر</h3>
+        </div>
+        <div class="card" onclick="location.href='#other'">
+            <img src="R.jfif" alt="الرقية_الشرعية">
+            <h3>الرقية الشرعية</h3>
+        </div>
+        <div class="card" onclick="location.href='#friday'">
+            <img src="More.jfif" alt="أذكار_متنوعة">
+            <h3>أذكار متنوعة</h3>
+        </div>
+    </main>
+    <script>
+        // Add hover effect animations
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'scale(1.05)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
